@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICT SETA Dashboard | Njabulo Mkhungo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl font-bold mb-8 text-center font-space">MICT SETA Dashboard</h1>
+                
+                <div class="bg-gray-50 rounded-xl p-6 mb-12">
+                    <h2 class="text-2xl font-bold mb-4">Project Overview</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        This interactive Power BI dashboard was developed to analyze and visualize training data for MICT SETA (Media, Information and Communication Technologies Sector Education and Training Authority).
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">Key Features</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-indigo-600 mr-2 mt-1"></i>
+                                    <span>Interactive filters for year, province, and training type</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-indigo-600 mr-2 mt-1"></i>
+                                    <span>Visualizations of training trends over time</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-indigo-600 mr-2 mt-1"></i>
+                                    <span>Geographical distribution of training programs</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-indigo-600 mr-2 mt-1"></i>
+                                    <span>Demographic breakdown of beneficiaries</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">Technologies Used</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">Power BI</span>
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">DAX</span>
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">SQL</span>
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">Data Modeling</span>
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">ETL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold mb-6">Dashboard Screenshots</h2>
+                    <div class="grid grid-cols-1 gap-6">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <img src="http://static.photos/technology/1024x576/10" alt="MICT Dashboard Overview" class="w-full rounded-lg shadow-md">
+                            <p class="text-gray-600 mt-2">Overview page showing key metrics and filters</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <img src="http://static.photos/technology/1024x576/11" alt="MICT Dashboard Trends" class="w-full rounded-lg shadow-md">
+                            <p class="text-gray-600 mt-2">Training trends analysis by year and province</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="index.html#projects" class="px-8 py-3 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition duration-300 inline-flex items-center">
+                        <i data-feather="arrow-left" class="mr-2"></i> Back to Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+
+/* Custom styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #2563eb;
+  --secondary: #059669;
+  --dark: #1f2937;
+  --light: #f9fafb;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+scroll-behavior: smooth;
+    color: var(--dark);
+    background-color: var(--light);
+}
+.font-space {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom shadow for cards */
+.shadow-hover {
+    transition: box-shadow 0.3s ease;
+}
+
+.shadow-hover:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+/* Custom button animation */
+.btn-animate {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.btn-animate:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer icon alignment */
+.footer-links li i {
+    vertical-align: middle;
+}
+
+/* Hero section z-index fix */
+#hero {
+    position: relative;
+    z-index: 1;
+}
+
+/* Profile image hover effect */
+#about img,
+#projects img {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: grayscale(20%) contrast(110%);
+}
+
+#about img:hover,
+#projects img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%) contrast(100%);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+}
+/* Download button responsive adjustments */
+@media (max-width: 640px) {
+    #about a[download] {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Stack about section on mobile */
+    #about .flex-col {
+        flex-direction: column;
+    }
+
+    /* Adjust project cards on mobile */
+    #projects .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Make contact form full width */
+    #contact form {
+        grid-template-columns: 1fr;
+    }
+}
