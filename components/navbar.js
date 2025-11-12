@@ -79,7 +79,7 @@ text-decoration: none;
       </style>
       
       <nav>
-        <a href="/" class="logo">CodeCraft</a>
+       
         
         <ul class="nav-links">
           <li><a href="#hero" class="nav-link">Home</a></li>
