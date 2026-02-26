@@ -1,0 +1,10 @@
+{
+  "name": "my-portfolio-main",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static portfolio website",
+  "scripts": {
+    "dev": "python -m http.server 5500",
+    "start": "python -m http.server 5500"
+  }
+}
