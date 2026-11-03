@@ -111,3 +111,30 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+
+.skill-card {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(79, 70, 229, 0.12);
+}
+
+.skill-heading {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 14px;
+}
+
+.skill-card p {
+  color: #4b5563;
+  line-height: 1.8;
+}
